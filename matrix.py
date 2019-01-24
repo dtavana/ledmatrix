@@ -48,7 +48,7 @@ def main():
             for column in columns:
               if row in currentOn and column in currentOn[row]:
                 GPIO.output(column, True)
-                time.sleep(.005)
+                time.sleep(.0025)
                 GPIO.output(column, False)
             GPIO.output(row, True)
     print("----Print Finished")
